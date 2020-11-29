@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calistamayer/note-taker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/calistamayer/note-taker/issues"
+  },
+  "homepage": "https://github.com/calistamayer/note-taker#readme"
 }
