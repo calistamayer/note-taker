@@ -5,6 +5,11 @@ const PORT = process.env.PORT || 3002;
 const app = express();
 const { notes } = require('./db/db.json');
 
+// parse incoming string or array data
+app.use(express.urlencoded({ extended: true }));
+// parse incoming JSON data
+app.use(express.json());
+
 app.use(express.static('public'));
 
 // api route for notes data
@@ -24,6 +29,7 @@ app.get('/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     console.log(req.body);
+    res.json(req.body);
 });
 
 app.listen(PORT, () => {
